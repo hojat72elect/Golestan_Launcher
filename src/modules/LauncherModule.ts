@@ -18,8 +18,7 @@ export const getInstalledApps = async (): Promise<AppInfo[]> => {
             return [];
         }
         const result = await launcherModule.getInstalledApps();
-        const apps = JSON.parse(result.apps);
-        return apps;
+      return JSON.parse(result.apps);
     } catch (error) {
         console.error('Error getting installed apps:', error);
         return [];
