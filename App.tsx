@@ -53,11 +53,7 @@ export default function App() {
 
     return (
         <View style={styles.container}>
-            <StatusBar/>
-            <View style={styles.header}>
-                <Text style={styles.headerTitle}>Golestan Launcher</Text>
-            </View>
-
+            <StatusBar hidden={true}/>
             <View style={styles.searchContainer}>
                 <TextInput
                     style={styles.searchInput}
@@ -67,7 +63,6 @@ export default function App() {
                     placeholderTextColor="#999"
                 />
             </View>
-
             <FlatList
                 data={filteredApps}
                 renderItem={renderAppItem}
@@ -90,11 +85,6 @@ const styles = StyleSheet.create({
         paddingVertical: 20,
         paddingHorizontal: 16,
         paddingTop: 40,
-    },
-    headerTitle: {
-        color: '#fff',
-        fontSize: 24,
-        fontWeight: 'bold',
     },
     searchContainer: {
         padding: 16,
