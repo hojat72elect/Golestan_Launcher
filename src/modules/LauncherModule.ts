@@ -1,7 +1,6 @@
 import {NativeModules} from 'react-native';
-import type {AppInfo} from '../types/app';
 
-const {LauncherModule} = NativeModules;
+export const {LauncherModule} = NativeModules;
 
 export interface LauncherModuleInterface {
     getInstalledApps(): Promise<{ apps: string }>;
@@ -10,20 +9,6 @@ export interface LauncherModuleInterface {
 }
 
 export const launcherModule: LauncherModuleInterface = LauncherModule;
-
-export const getInstalledApps = async (): Promise<AppInfo[]> => {
-    try {
-        if (!LauncherModule) {
-            console.error('LauncherModule is not available. Make sure the native module is properly linked.');
-            return [];
-        }
-        const result = await launcherModule.getInstalledApps();
-      return JSON.parse(result.apps);
-    } catch (error) {
-        console.error('Error getting installed apps:', error);
-        return [];
-    }
-};
 
 export const launchApp = async (packageName: string, activityName: string): Promise<boolean> => {
     try {

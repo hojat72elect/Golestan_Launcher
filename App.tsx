@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Dimensions, FlatList, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
-import {getInstalledApps, launchApp} from './src/modules/LauncherModule';
+import {launchApp} from './src/modules/LauncherModule';
 import type {AppInfo} from './src/types/app';
+import {GetInstalledAppsUseCase} from "./src/usecases/GetInstalledAppsUseCase";
 
 const {width} = Dimensions.get('window');
 const numColumns = 4;
@@ -27,7 +28,7 @@ export default function App() {
     }, [searchQuery, apps]);
 
     const loadApps = async () => {
-        const installedApps = await getInstalledApps();
+        const installedApps = await GetInstalledAppsUseCase();
         setApps(installedApps);
         setFilteredApps(installedApps);
     };
