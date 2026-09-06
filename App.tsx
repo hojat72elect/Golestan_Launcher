@@ -4,7 +4,7 @@ import {StyleSheet, Text, View} from 'react-native';
 export default function App() {
     return (
         <View style={styles.container}>
-            <Text>Golestan Launcher Application</Text>
+            <Text>Golestan Launcher App</Text>
             <StatusBar style="auto"/>
         </View>
     );
