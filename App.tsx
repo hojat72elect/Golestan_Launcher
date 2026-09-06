@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Dimensions, FlatList, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
 import {launchApp} from './src/modules/LauncherModule';
-import type {AppInfo} from './src/types/app';
+import type {AppInfo} from './src/domain/AppInfo';
 import {GetInstalledAppsUseCase} from "./src/usecases/GetInstalledAppsUseCase";
 
 const {width} = Dimensions.get('window');

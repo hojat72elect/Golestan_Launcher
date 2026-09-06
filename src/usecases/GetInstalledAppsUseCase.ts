@@ -1,4 +1,4 @@
-import type {AppInfo} from "../types/app";
+import type {AppInfo} from "../domain/AppInfo";
 import {LauncherModule, launcherModule} from "../modules/LauncherModule";
 
 export async function GetInstalledAppsUseCase(): Promise<AppInfo[]> {
