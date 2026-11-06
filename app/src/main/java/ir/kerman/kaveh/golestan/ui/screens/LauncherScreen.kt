@@ -101,7 +101,7 @@ fun LauncherScreen(
                 HomeClockWidget()
             }
 
-            // Nova-Style Floating Search Bar
+            // Floating Search Bar
             SearchBarComponent(
                 query = searchQuery,
                 onQueryChange = viewModel::onSearchQueryChange,

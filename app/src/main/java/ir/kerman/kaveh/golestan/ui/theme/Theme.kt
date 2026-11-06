@@ -11,27 +11,27 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = NovaAccentBlue,
-    secondary = NovaAccentPurple,
+    primary = GolestanAccentBlue,
+    secondary = GolestanAccentPurple,
     tertiary = Pink80,
-    background = NovaDarkSurface,
-    surface = NovaDarkCard,
-    onPrimary = NovaTextPrimaryDark,
-    onSecondary = NovaTextPrimaryDark,
-    onBackground = NovaTextPrimaryDark,
-    onSurface = NovaTextPrimaryDark
+    background = GolestanDarkSurface,
+    surface = GolestanDarkCard,
+    onPrimary = GolestanTextPrimaryDark,
+    onSecondary = GolestanTextPrimaryDark,
+    onBackground = GolestanTextPrimaryDark,
+    onSurface = GolestanTextPrimaryDark
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = NovaAccentBlue,
-    secondary = NovaAccentPurple,
+    primary = GolestanAccentBlue,
+    secondary = GolestanAccentPurple,
     tertiary = Pink40,
-    background = NovaLightSurface,
-    surface = NovaLightCard,
-    onPrimary = NovaLightSurface,
-    onSecondary = NovaLightSurface,
-    onBackground = NovaTextPrimaryLight,
-    onSurface = NovaTextPrimaryLight
+    background = GolestanLightSurface,
+    surface = GolestanLightCard,
+    onPrimary = GolestanLightSurface,
+    onSecondary = GolestanLightSurface,
+    onBackground = GolestanTextPrimaryLight,
+    onSurface = GolestanTextPrimaryLight
 )
 
 @Composable
