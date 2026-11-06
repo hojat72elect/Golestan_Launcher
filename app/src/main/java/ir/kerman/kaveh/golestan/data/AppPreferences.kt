@@ -2,6 +2,7 @@ package ir.kerman.kaveh.golestan.data
 
 import android.content.Context
 import android.content.SharedPreferences
+import androidx.core.content.edit
 import ir.kerman.kaveh.golestan.model.ViewMode
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -46,12 +47,8 @@ class AppPreferences(context: Context) {
         } else {
             current.add(packageName)
         }
-        prefs.edit().putStringSet(KEY_FAVORITES, current).apply()
+        prefs.edit { putStringSet(KEY_FAVORITES, current) }
         _favoritesFlow.value = current
-    }
-
-    fun isFavorite(packageName: String): Boolean {
-        return getFavorites().contains(packageName)
     }
 
     fun getColumns(): Int {
@@ -60,7 +57,7 @@ class AppPreferences(context: Context) {
 
     fun setColumns(columns: Int) {
         val clamped = columns.coerceIn(3, 6)
-        prefs.edit().putInt(KEY_COLUMNS, clamped).apply()
+        prefs.edit { putInt(KEY_COLUMNS, clamped) }
         _columnsFlow.value = clamped
     }
 
@@ -68,13 +65,13 @@ class AppPreferences(context: Context) {
         val name = prefs.getString(KEY_VIEW_MODE, ViewMode.GRID.name) ?: ViewMode.GRID.name
         return try {
             ViewMode.valueOf(name)
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             ViewMode.GRID
         }
     }
 
     fun setViewMode(mode: ViewMode) {
-        prefs.edit().putString(KEY_VIEW_MODE, mode.name).apply()
+        prefs.edit { putString(KEY_VIEW_MODE, mode.name) }
         _viewModeFlow.value = mode
     }
 
@@ -83,7 +80,7 @@ class AppPreferences(context: Context) {
     }
 
     fun setShowLabels(show: Boolean) {
-        prefs.edit().putBoolean(KEY_SHOW_LABELS, show).apply()
+        prefs.edit { putBoolean(KEY_SHOW_LABELS, show) }
         _showLabelsFlow.value = show
     }
 
@@ -92,7 +89,7 @@ class AppPreferences(context: Context) {
     }
 
     fun setShowSystemApps(show: Boolean) {
-        prefs.edit().putBoolean(KEY_SHOW_SYSTEM_APPS, show).apply()
+        prefs.edit { putBoolean(KEY_SHOW_SYSTEM_APPS, show) }
         _showSystemAppsFlow.value = show
     }
 }

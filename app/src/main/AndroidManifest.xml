@@ -5,7 +5,7 @@
     <!-- Essential for Launcher to see all installed apps on Android 11+ (API 30+) -->
     <uses-permission
         android:name="android.permission.QUERY_ALL_PACKAGES"
-        tools:ignore="QueryAllPackagesPermission" />
+        tools:ignore="PackageVisibilityPolicy,QueryAllPackagesPermission" />
 
     <!-- Allows prompting user to uninstall an app from contextual menu -->
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
