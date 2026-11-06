@@ -19,11 +19,16 @@ import ir.kerman.kaveh.golestan.model.LauncherTab
 import ir.kerman.kaveh.golestan.receiver.PackageChangeReceiver
 import ir.kerman.kaveh.golestan.ui.screens.LauncherScreen
 import ir.kerman.kaveh.golestan.ui.theme.GolestanLauncherTheme
-import ir.kerman.kaveh.golestan.viewmodel.LauncherViewModel
+import ir.kerman.kaveh.golestan.viewmodel.MainViewModel
 
+/**
+ * Main page of the app.
+ * It's gonna be the home screen of the app.
+ * It currently shows all the installed apps.
+ */
 class MainActivity : ComponentActivity() {
 
-    private val viewModel: LauncherViewModel by viewModels()
+    private val viewModel: MainViewModel by viewModels()
     private lateinit var packageReceiver: PackageChangeReceiver
 
     override fun onCreate(savedInstanceState: Bundle?) {

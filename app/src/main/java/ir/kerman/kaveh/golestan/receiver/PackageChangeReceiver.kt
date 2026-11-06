@@ -6,9 +6,11 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.os.Build
 
-class PackageChangeReceiver(
-    private val onPackageChanged: () -> Unit
-) : BroadcastReceiver() {
+/**
+ * This [BroadcastReceiver] will notify us of anything that might happen to
+ * packages/apps that are currently installed on our device.
+ */
+class PackageChangeReceiver(private val onPackageChanged: () -> Unit) : BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {
         val action = intent?.action

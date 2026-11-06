@@ -16,7 +16,10 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
-class LauncherViewModel(application: Application) : AndroidViewModel(application) {
+/**
+ * Main ViewModel of the app.
+ */
+class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     private val preferences = AppPreferences(application)
     private val repository = AppRepository(application, preferences)
@@ -81,6 +84,9 @@ class LauncherViewModel(application: Application) : AndroidViewModel(application
         loadApps()
     }
 
+    /**
+     * Load the apps that are currently installed on the device.
+     */
     fun loadApps() {
         viewModelScope.launch {
             _isLoading.value = true

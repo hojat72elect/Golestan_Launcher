@@ -57,11 +57,11 @@ import ir.kerman.kaveh.golestan.ui.components.AppListItem
 import ir.kerman.kaveh.golestan.ui.components.HomeClockWidget
 import ir.kerman.kaveh.golestan.ui.components.SearchBarComponent
 import ir.kerman.kaveh.golestan.ui.components.SettingsBottomSheet
-import ir.kerman.kaveh.golestan.viewmodel.LauncherViewModel
+import ir.kerman.kaveh.golestan.viewmodel.MainViewModel
 
 @Composable
 fun LauncherScreen(
-    viewModel: LauncherViewModel,
+    viewModel: MainViewModel,
     onLaunchApp: (AppModel) -> Unit,
     onAppInfo: (AppModel) -> Unit,
     onUninstallApp: (AppModel) -> Unit,
