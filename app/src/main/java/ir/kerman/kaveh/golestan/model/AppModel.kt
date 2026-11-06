@@ -26,13 +26,3 @@ data class AppModel(
         return result
     }
 }
-
-enum class ViewMode {
-    GRID,
-    LIST
-}
-
-enum class LauncherTab {
-    ALL,
-    FAVORITES
-}
