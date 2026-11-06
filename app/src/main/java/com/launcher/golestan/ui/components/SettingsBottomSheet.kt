@@ -12,11 +12,10 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ViewList
 import androidx.compose.material.icons.filled.GridView
-import androidx.compose.material.icons.filled.ViewList
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
@@ -35,7 +34,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.launcher.golestan.R
 import com.launcher.golestan.model.ViewMode
 
@@ -107,7 +105,7 @@ fun SettingsBottomSheet(
 
                 ModeButton(
                     title = stringResource(R.string.list_mode),
-                    icon = Icons.Default.ViewList,
+                    icon = Icons.AutoMirrored.Filled.ViewList,
                     isSelected = viewMode == ViewMode.LIST,
                     onClick = { onViewModeChange(ViewMode.LIST) },
                     modifier = Modifier.weight(1f)

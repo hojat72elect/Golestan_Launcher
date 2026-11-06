@@ -66,7 +66,7 @@ class LauncherViewModel(application: Application) : AndroidViewModel(application
             val lowercaseQuery = trimmed.lowercase()
             list = list.filter {
                 it.label.lowercase().contains(lowercaseQuery) ||
-                it.packageName.lowercase().contains(lowercaseQuery)
+                        it.packageName.lowercase().contains(lowercaseQuery)
             }
         }
 

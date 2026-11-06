@@ -20,16 +20,17 @@
 
         <activity
             android:name=".MainActivity"
+            android:clearTaskOnLaunch="false"
             android:exported="true"
             android:launchMode="singleTask"
-            android:clearTaskOnLaunch="false"
-            android:stateNotNeeded="true"
             android:resumeWhilePausing="true"
+            android:stateNotNeeded="true"
             android:windowSoftInputMode="adjustResize">
 
             <!-- Identifies this app as a Home Launcher -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
