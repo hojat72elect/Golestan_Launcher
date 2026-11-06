@@ -11,27 +11,27 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = GolestanAccentBlue,
-    secondary = GolestanAccentPurple,
-    tertiary = Pink80,
-    background = GolestanDarkSurface,
-    surface = GolestanDarkCard,
-    onPrimary = GolestanTextPrimaryDark,
-    onSecondary = GolestanTextPrimaryDark,
-    onBackground = GolestanTextPrimaryDark,
-    onSurface = GolestanTextPrimaryDark
+    primary = Color.GolestanAccentBlue,
+    secondary = Color.GolestanAccentPurple,
+    tertiary = Color.Pink80,
+    background = Color.GolestanDarkSurface,
+    surface = Color.GolestanDarkCard,
+    onPrimary = Color.GolestanTextPrimaryDark,
+    onSecondary = Color.GolestanTextPrimaryDark,
+    onBackground = Color.GolestanTextPrimaryDark,
+    onSurface = Color.GolestanTextPrimaryDark
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = GolestanAccentBlue,
-    secondary = GolestanAccentPurple,
-    tertiary = Pink40,
-    background = GolestanLightSurface,
-    surface = GolestanLightCard,
-    onPrimary = GolestanLightSurface,
-    onSecondary = GolestanLightSurface,
-    onBackground = GolestanTextPrimaryLight,
-    onSurface = GolestanTextPrimaryLight
+    primary = Color.GolestanAccentBlue,
+    secondary = Color.GolestanAccentPurple,
+    tertiary = Color.Pink40,
+    background = Color.GolestanLightSurface,
+    surface = Color.GolestanLightCard,
+    onPrimary = Color.GolestanLightSurface,
+    onSecondary = Color.GolestanLightSurface,
+    onBackground = Color.GolestanTextPrimaryLight,
+    onSurface = Color.GolestanTextPrimaryLight
 )
 
 @Composable
