@@ -11,4 +11,8 @@
 -keep class com.swmansion.reanimated.** { *; }
 -keep class com.facebook.react.turbomodule.** { *; }
 
+# Launcher module: methods are resolved reflectively when called from JS
+-keep class com.hojat72elect.Golestan_Launcher.LauncherModule { *; }
+-keep class com.hojat72elect.Golestan_Launcher.LauncherPackage { *; }
+
 # Add any project specific keep options here:
