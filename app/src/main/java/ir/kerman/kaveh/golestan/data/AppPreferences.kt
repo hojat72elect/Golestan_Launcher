@@ -1,8 +1,8 @@
-package com.launcher.golestan.data
+package ir.kerman.kaveh.golestan.data
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.launcher.golestan.model.ViewMode
+import ir.kerman.kaveh.golestan.model.ViewMode
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

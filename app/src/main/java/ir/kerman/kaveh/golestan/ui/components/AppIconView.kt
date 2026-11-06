@@ -1,4 +1,4 @@
-package com.launcher.golestan.ui.components
+package ir.kerman.kaveh.golestan.ui.components
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -13,7 +13,7 @@ import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.launcher.golestan.R
+import ir.kerman.kaveh.golestan.R
 
 @Composable
 fun AppIconView(

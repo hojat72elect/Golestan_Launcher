@@ -19,7 +19,7 @@
         android:theme="@style/Theme.GolestanLauncher">
 
         <activity
-            android:name=".MainActivity"
+            android:name="ir.kerman.kaveh.golestan.MainActivity"
             android:clearTaskOnLaunch="false"
             android:exported="true"
             android:launchMode="singleTask"

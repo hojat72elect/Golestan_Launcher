@@ -1,4 +1,4 @@
-package com.launcher.golestan.ui.theme
+package ir.kerman.kaveh.golestan.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

@@ -1,4 +1,4 @@
-package com.launcher.golestan.ui.theme
+package ir.kerman.kaveh.golestan.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

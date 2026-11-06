@@ -1,4 +1,4 @@
-package com.launcher.golestan.receiver
+package ir.kerman.kaveh.golestan.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context

@@ -1,4 +1,4 @@
-package com.launcher.golestan.ui.components
+package ir.kerman.kaveh.golestan.ui.components
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -29,7 +29,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.launcher.golestan.model.AppModel
+import ir.kerman.kaveh.golestan.model.AppModel
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable

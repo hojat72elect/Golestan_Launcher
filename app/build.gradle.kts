@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.launcher.golestan"
+    namespace = "ir.kerman.kaveh.golestan"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.launcher.golestan"
+        applicationId = "ir.kerman.kaveh.golestan"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.launcher.golestan.ui.screens
+package ir.kerman.kaveh.golestan.ui.screens
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
@@ -47,17 +47,17 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.launcher.golestan.R
-import com.launcher.golestan.model.AppModel
-import com.launcher.golestan.model.LauncherTab
-import com.launcher.golestan.model.ViewMode
-import com.launcher.golestan.ui.components.AppContextMenu
-import com.launcher.golestan.ui.components.AppGridItem
-import com.launcher.golestan.ui.components.AppListItem
-import com.launcher.golestan.ui.components.HomeClockWidget
-import com.launcher.golestan.ui.components.SearchBarComponent
-import com.launcher.golestan.ui.components.SettingsBottomSheet
-import com.launcher.golestan.viewmodel.LauncherViewModel
+import ir.kerman.kaveh.golestan.R
+import ir.kerman.kaveh.golestan.model.AppModel
+import ir.kerman.kaveh.golestan.model.LauncherTab
+import ir.kerman.kaveh.golestan.model.ViewMode
+import ir.kerman.kaveh.golestan.ui.components.AppContextMenu
+import ir.kerman.kaveh.golestan.ui.components.AppGridItem
+import ir.kerman.kaveh.golestan.ui.components.AppListItem
+import ir.kerman.kaveh.golestan.ui.components.HomeClockWidget
+import ir.kerman.kaveh.golestan.ui.components.SearchBarComponent
+import ir.kerman.kaveh.golestan.ui.components.SettingsBottomSheet
+import ir.kerman.kaveh.golestan.viewmodel.LauncherViewModel
 
 @Composable
 fun LauncherScreen(

@@ -1,4 +1,4 @@
-package com.launcher.golestan
+package ir.kerman.kaveh.golestan
 
 import android.content.ActivityNotFoundException
 import android.content.ComponentName
@@ -14,12 +14,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import com.launcher.golestan.model.AppModel
-import com.launcher.golestan.model.LauncherTab
-import com.launcher.golestan.receiver.PackageChangeReceiver
-import com.launcher.golestan.ui.screens.LauncherScreen
-import com.launcher.golestan.ui.theme.GolestanLauncherTheme
-import com.launcher.golestan.viewmodel.LauncherViewModel
+import ir.kerman.kaveh.golestan.model.AppModel
+import ir.kerman.kaveh.golestan.model.LauncherTab
+import ir.kerman.kaveh.golestan.receiver.PackageChangeReceiver
+import ir.kerman.kaveh.golestan.ui.screens.LauncherScreen
+import ir.kerman.kaveh.golestan.ui.theme.GolestanLauncherTheme
+import ir.kerman.kaveh.golestan.viewmodel.LauncherViewModel
 
 class MainActivity : ComponentActivity() {
 

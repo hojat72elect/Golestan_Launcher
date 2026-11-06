@@ -1,4 +1,4 @@
-package com.launcher.golestan.ui.components
+package ir.kerman.kaveh.golestan.ui.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
