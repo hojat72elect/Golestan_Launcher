@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer home circle -->
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M54,22A32,32 0 1,0 54,86A32,32 0 1,0 54,22Z" />
+    <!-- Modern Launcher grid icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,38h8v8h-8z M50,38h8v8h-8z M60,38h8v8h-8z M40,48h8v8h-8z M50,48h8v8h-8z M60,48h8v8h-8z M40,58h8v8h-8z M50,58h8v8h-8z M60,58h8v8h-8z" />
+</vector>

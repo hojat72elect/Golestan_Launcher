@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Nova Golestan</string>
+    <string name="search_hint">Search apps, package...</string>
+    <string name="no_apps_found">No apps found</string>
+    <string name="app_info">App Info</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="open_store">Google Play Store</string>
+    <string name="pin_favorite">Pin to Favorites</string>
+    <string name="unpin_favorite">Remove from Favorites</string>
+    <string name="favorites_title">Favorites</string>
+    <string name="all_apps_title">All Apps</string>
+    <string name="settings_title">Launcher Settings</string>
+    <string name="grid_columns">Grid Columns</string>
+    <string name="show_system_apps">Include System Apps</string>
+    <string name="show_labels">Show App Labels</string>
+    <string name="view_mode">Layout Mode</string>
+    <string name="grid_mode">Grid View</string>
+    <string name="list_mode">List View</string>
+    <string name="apps_count">%1$d apps installed</string>
+</resources>
