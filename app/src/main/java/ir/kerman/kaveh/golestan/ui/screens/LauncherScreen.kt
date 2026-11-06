@@ -1,8 +1,5 @@
 package ir.kerman.kaveh.golestan.ui.screens
 
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.fadeIn
-import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -54,7 +51,6 @@ import ir.kerman.kaveh.golestan.model.ViewMode
 import ir.kerman.kaveh.golestan.ui.components.AppContextMenu
 import ir.kerman.kaveh.golestan.ui.components.AppGridItem
 import ir.kerman.kaveh.golestan.ui.components.AppListItem
-import ir.kerman.kaveh.golestan.ui.components.HomeClockWidget
 import ir.kerman.kaveh.golestan.ui.components.SearchBarComponent
 import ir.kerman.kaveh.golestan.ui.components.SettingsBottomSheet
 import ir.kerman.kaveh.golestan.viewmodel.MainViewModel
@@ -92,16 +88,8 @@ fun LauncherScreen(
                 .statusBarsPadding()
                 .navigationBarsPadding()
         ) {
-            // Clock & Greeting Widget (visible when not actively searching)
-            AnimatedVisibility(
-                visible = searchQuery.isEmpty(),
-                enter = fadeIn(),
-                exit = fadeOut()
-            ) {
-                HomeClockWidget()
-            }
 
-            // Floating Search Bar
+            // The Search Bar
             SearchBarComponent(
                 query = searchQuery,
                 onQueryChange = viewModel::onSearchQueryChange,
