@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Dimensions, FlatList, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
-import {launchApp} from './src/modules/LauncherModule';
-import type {AppInfo} from './src/domain/AppInfo';
-import {GetInstalledAppsUseCase} from "./src/usecases/GetInstalledAppsUseCase";
+import {launchApp} from './src/LauncherModule';
+import type {AppInfo} from './src/AppInfo';
+import {GetInstalledAppsUseCase} from "./src/GetInstalledAppsUseCase";
 
 const {width} = Dimensions.get('window');
 const numColumns = 4;
@@ -27,30 +27,37 @@ export default function App() {
         }
     }, [searchQuery, apps]);
 
-    const loadApps = async () => {
+    async function loadApps() {
         const installedApps = await GetInstalledAppsUseCase();
         setApps(installedApps);
         setFilteredApps(installedApps);
-    };
+    }
 
-    const handleAppPress = async (app: AppInfo) => {
+    async function handleAppPress(app: AppInfo) {
         await launchApp(app.packageName, app.activityName);
-    };
+    }
 
-    const renderAppItem = ({item}: { item: AppInfo }) => (
-        <TouchableOpacity
-            style={styles.appItem}
-            onPress={() => handleAppPress(item)}
-            activeOpacity={0.7}
-        >
-            <View style={styles.appIcon}>
-                <Text style={styles.appIconText}>{item.appName.charAt(0)}</Text>
-            </View>
-            <Text style={styles.appName} numberOfLines={2}>
-                {item.appName}
-            </Text>
-        </TouchableOpacity>
-    );
+    /**
+     * Each one of the clickable app icons in the main screen of the app.
+     * If user clicks on any of these icons, the corresponding app will be
+     * started.
+     */
+    function renderClickableAppIcon({item}: { item: AppInfo }) {
+        return (
+            <TouchableOpacity
+                style={styles.appItem}
+                onPress={() => handleAppPress(item)}
+                activeOpacity={0.7}
+            >
+                <View style={styles.appIcon}>
+                    <Text style={styles.appIconText}>{item.appName.charAt(0)}</Text>
+                </View>
+                <Text style={styles.appName} numberOfLines={2}>
+                    {item.appName}
+                </Text>
+            </TouchableOpacity>
+        )
+    }
 
     return (
         <View style={styles.container}>
@@ -66,7 +73,7 @@ export default function App() {
             </View>
             <FlatList
                 data={filteredApps}
-                renderItem={renderAppItem}
+                renderItem={renderClickableAppIcon}
                 keyExtractor={(item) => item.packageName}
                 numColumns={numColumns}
                 contentContainerStyle={styles.gridContainer}

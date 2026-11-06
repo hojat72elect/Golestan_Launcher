@@ -1,5 +1,5 @@
-import type {AppInfo} from "../domain/AppInfo";
-import {LauncherModule, launcherModule} from "../modules/LauncherModule";
+import type {AppInfo} from "./AppInfo";
+import {LauncherModule, launcherModule} from "./LauncherModule";
 
 export async function GetInstalledAppsUseCase(): Promise<AppInfo[]> {
     try {
